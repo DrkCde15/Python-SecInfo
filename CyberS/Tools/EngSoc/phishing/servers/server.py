@@ -11,7 +11,7 @@ class ServerHandler(SimpleHTTPRequestHandler):
 
         print(f"[{timestamp}] [GET] Conexão de {ip} - User-Agent: {user_agent}")
 
-        if self.path == '/' or self.path == '/index.html':
+        if self.path == '/' or self.redirect_Path + "index.html":
             try:
                 with open("index.html", "rb") as file:
                     self.send_response(200)
