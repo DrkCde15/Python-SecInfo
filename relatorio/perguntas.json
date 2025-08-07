@@ -1,0 +1,82 @@
+[
+  {
+    "pergunta": "A sua empresa está monitorando as novas vulnerabilidades dos sistemas críticos operacionais, aplicações, bancos de dados, serviços etc?",
+    "peso": 1
+  },
+  {
+    "pergunta": "Os sistemas de informação são testados antes de serem colocados em produção?",
+    "peso": 1
+  },
+  {
+    "pergunta": "A topologia de rede e a arquitetura dos sistemas críticos da empresa são revisados periodicamente?",
+    "peso": 1
+  },
+  {
+    "pergunta": "Os planos de contingência e de continuidade de negócios são testados através de simulações?",
+    "peso": 1
+  },
+  {
+    "pergunta": "A política de segurança da empresa é testada regularmente contra simulações de ataques e testes de intrusão?",
+    "peso": 1
+  },
+  {
+    "pergunta": "Você pode estimar quais seriam os recursos necessários para alguém romper a segurança e invadir os sistemas de sua empresa?",
+    "peso": 1
+  },
+  {
+    "pergunta": "Você pode qualificar as ameaças para sua empresa?",
+    "peso": 1
+  },
+  {
+    "pergunta": "Os perfis de atacantes são revisados e redefinidos periodicamente?",
+    "peso": 1
+  },
+  {
+    "pergunta": "A sua empresa já estimou o custo de uma paralisação dos processos críticos?",
+    "peso": 1
+  },
+  {
+    "pergunta": "No caso de rupturas de segurança ou acesso indevido aos sistemas, é possível estimar as perdas financeiras?",
+    "peso": 1
+  },
+  {
+    "pergunta": "A sua empresa está adotando as ações recomendadas para proteger os sistemas de acordo com as novas vulnerabilidades descobertas?",
+    "peso": 1
+  },
+  {
+    "pergunta": "A sua organização tem uma política de segurança formal e documentada?",
+    "peso": 1
+  },
+  {
+    "pergunta": "Existe uma base de dados de segurança centralizada de todos os usuários?",
+    "peso": 1
+  },
+  {
+    "pergunta": "A sua empresa pode controlar o acesso de usuários externos e internos aos servidores de sua rede?",
+    "peso": 1
+  },
+  {
+    "pergunta": "É possível monitorar as atividades em toda a rede e em todos os servidores?",
+    "peso": 1
+  },
+  {
+    "pergunta": "A sua empresa monitora as atividades de cada usuário ou estação de trabalho?",
+    "peso": 1
+  },
+  {
+    "pergunta": "A sua empresa conseguiria confirmar a ocorrência de acesso indevido nos últimos 12 meses?",
+    "peso": 1
+  },
+  {
+    "pergunta": "As transações críticas da rede de sua empresa são criptografadas?",
+    "peso": 1
+  },
+  {
+    "pergunta": "A política e a infraestrutura de segurança podem ser administradas de forma integrada?",
+    "peso": 1
+  },
+  {
+    "pergunta": "Existe um alerta em tempo real para tentativas de intrusão ou acesso indevido?",
+    "peso": 1
+  }
+]
