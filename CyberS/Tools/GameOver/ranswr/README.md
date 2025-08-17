@@ -1,9 +1,36 @@
-                                        LEIA ISSO E NÃO CRIPTOGRAFE TODOS OS SEUS ARQUIVOS
+# 🔐 Ransomware com Python
 
+Este repositório contém dois scripts em **Python** que implementam, de forma **didática**, um sistema de criptografia e descriptografia de arquivos utilizando a biblioteca [`cryptography`].
 
-1.pip install cyptography
+> ⚠️ **Aviso importante**
+>
+> - Uso **exclusivamente educacional** e em **ambientes de teste**.
+> - **Não** utilize para atividades maliciosas.
+> - Você é responsável por qualquer uso indevido.
 
-2.colocar o diretório onde vai deixar a pasta 'arquivos' no encrypt e descript
+---
 
-3.pip install pyinstaller
-    3.1.pyinstaller --onefile(transforma em arquivo executavel) --noconsole(a tela do cmd não aparece) encrypt.py descypt.py
+## 📂 Estrutura
+- **arquivos**
+Arquivos que serão criptografados(coloque o caminho nos arquivos encrypt e descrypt):
+    dados.txt
+    email.txt
+    senhas.txt
+- **`encrypt.py`** → Criptografa arquivos em um diretório.
+- **`decrypt.py`** → Descriptografa arquivos previamente criptografados.
+
+---
+
+## ⚙️ Requisitos
+
+- Python **Python 3.10**
+- Biblioteca `cryptography`
+
+Instalação:
+```bash
+pip install cryptography
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/DrkCde15/SecInfo/Cyber/Tools/GameOver/ranswr.git
+   cd SecInfo/Cyber/Tools/GameOver/ranswr
