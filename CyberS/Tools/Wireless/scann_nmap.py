@@ -1,5 +1,7 @@
 import nmap
 import os
+import json
+import socket
 from datetime import datetime
 
 def banner():
@@ -10,24 +12,41 @@ def banner():
 def menu():
     print("\nEscolha o tipo de scan:")
     print("[1] Scan Rápido")
-    print("[2] Scan Agressivo (-A -T5)")
+    print("[2] Scan Agressivo")
     print("[3] Scan Stealth (furtivo)")
     print("[0] Sair")
     return input("\nDigite a opção desejada: ").strip()
+
+# Resolver DNS e listar IPs
+def resolver_ips(alvo):
+    try:
+        print(f"\n[*] Resolvendo {alvo}...")
+        infos = socket.getaddrinfo(alvo, None)
+        ips = list({info[4][0] for info in infos})  # elimina duplicados
+        print("[+] IPs encontrados:")
+        for i, ip in enumerate(ips, 1):
+            print(f"   [{i}] {ip}")
+        escolha = input("\nDigite o número do IP que deseja escanear (ou ENTER para o primeiro): ").strip()
+        if escolha.isdigit() and 1 <= int(escolha) <= len(ips):
+            return ips[int(escolha) - 1]
+        return ips[0]  # padrão: primeiro IP
+    except Exception as e:
+        print(f"[!] Falha ao resolver domínio: {e}")
+        return alvo  # tenta escanear o alvo original mesmo assim
 
 def scan_rapido(alvo):
     print(f"\n[+] Iniciando Scan Rápido em: {alvo}")
     scanner = nmap.PortScanner()
     scanner.scan(hosts=alvo, ports='1-1024', arguments='-T5')
     resultado = exibir_resultados(scanner, alvo, "rapido")
-    salvar_em_txt(alvo, "rapido", resultado)
+    salvar_resultados(alvo, "rapido", resultado, scanner)
 
 def scan_agressivo(alvo):
     print(f"\n[+] Iniciando Scan Agressivo em: {alvo}")
     scanner = nmap.PortScanner()
     scanner.scan(hosts=alvo, arguments='-A -T5')
     resultado = exibir_resultados(scanner, alvo, "agressivo")
-    salvar_em_txt(alvo, "agressivo", resultado)
+    salvar_resultados(alvo, "agressivo", resultado, scanner)
 
 def scan_stealth(alvo):
     print(f"\n[+] Iniciando Scan Stealth (furtivo) em: {alvo}")
@@ -35,7 +54,7 @@ def scan_stealth(alvo):
     argumentos_stealth = "-sS -T1 -Pn -n -f -D RND:5 --scan-delay 1s --max-rate 10"
     scanner.scan(hosts=alvo, ports='1-1024', arguments=argumentos_stealth)
     resultado = exibir_resultados(scanner, alvo, "stealth")
-    salvar_em_txt(alvo, "stealth", resultado)
+    salvar_resultados(alvo, "stealth", resultado, scanner)
 
 def exibir_resultados(scanner, alvo, modo):
     saida = []
@@ -69,19 +88,32 @@ def exibir_resultados(scanner, alvo, modo):
     print("\n".join(saida))
     return "\n".join(saida)
 
-def salvar_em_txt(alvo, modo, resultado):
+def salvar_resultados(alvo, modo, resultado, scanner):
     data_hora = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     pasta = os.path.join("resultados", "scans")
     os.makedirs(pasta, exist_ok=True)
 
-    nome_arquivo = f"{alvo.replace('.', '_')}_{modo}_{data_hora}.txt"
-    caminho = os.path.join(pasta, nome_arquivo)
+    # Arquivo TXT
+    nome_arquivo_txt = f"{alvo.replace('.', '_')}_{modo}_{data_hora}.txt"
+    caminho_txt = os.path.join(pasta, nome_arquivo_txt)
 
-    with open(caminho, "w", encoding='utf-8') as f:
+    with open(caminho_txt, "w", encoding='utf-8') as f:
         f.write(f"Scan em: {alvo}\nModo: {modo}\nData: {data_hora}\n\n")
         f.write(resultado)
 
-    print(f"\n[✔] Resultado salvo em: {caminho}")
+    print(f"\n[✔] Resultado TXT salvo em: {caminho_txt}")
+
+    # Arquivo JSON só se houver resultados
+    if alvo in scanner.all_hosts():
+        nome_arquivo_json = f"{alvo.replace('.', '_')}_{modo}_{data_hora}.json"
+        caminho_json = os.path.join(pasta, nome_arquivo_json)
+
+        with open(caminho_json, "w", encoding='utf-8') as f:
+            json.dump(scanner[alvo], f, indent=4, ensure_ascii=False)
+
+        print(f"[✔] Resultado JSON salvo em: {caminho_json}")
+    else:
+        print("[!] Nenhum dado para salvar em JSON (host não respondeu).")
 
 def main():
     banner()
@@ -96,12 +128,15 @@ def main():
             print("[-] Alvo inválido.")
             continue
 
+        # resolve domínio -> retorna IP válido
+        alvo_resolvido = resolver_ips(alvo)
+
         if opcao == '1':
-            scan_rapido(alvo)
+            scan_rapido(alvo_resolvido)
         elif opcao == '2':
-            scan_agressivo(alvo)
+            scan_agressivo(alvo_resolvido)
         elif opcao == '3':
-            scan_stealth(alvo)
+            scan_stealth(alvo_resolvido)
         else:
             print("[-] Opção inválida.")
 
