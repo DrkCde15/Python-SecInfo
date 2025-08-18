@@ -1,6 +1,6 @@
 # GameOver
 
-Este repositório contém scripts em **Python** desenvolvidos de forma **didática** para simular cenários de risco em sistemas computacionais.  
+Este repositório contém scripts em **Python** desenvolvidos para simular cenários de risco em sistemas computacionais.  
 O objetivo é **educacional**, servindo como apoio ao estudo de **cibersegurança**.
 
 > ⚠️ **Aviso importante**
