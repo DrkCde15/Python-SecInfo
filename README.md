@@ -6,11 +6,14 @@ This repository contains a collection of **Python** scripts aimed at security te
 
 ## 📂 Structure
 
-- **backdoor**  
+- **Books**  
+  Collection of Books for the study in Cyber Security
+  
+- **Backdoor**  
   This repository contains a teaching payload server for remote execution via PowerShell, using Python and HTTP.
   Its purpose is educational, allowing for the study of payloads, remote communication, and command manipulation in a controlled manner in security labs.
 
-- **cryptography**  
+- **Cryptography**  
   Python script to **encrypt and decrypt** a message using the random and string libraries
 
 - **EngSoc**  
