@@ -2,12 +2,7 @@
 
 Este repositório contém um servidor didático de **payloads** para execução remota via PowerShell, utilizando **Python e HTTP**.
 O objetivo é educacional, permitindo estudar payloads, comunicação remota e manipulação de comandos de forma controlada em laboratórios de segurança.
-
-## ⚠️ Aviso importante
-
-Uso exclusivamente educacional e em ambientes de teste isolados.
-Não utilize este script para acessar sistemas de terceiros sem permissão.
-O usuário é totalmente responsável por qualquer uso indevido.
+⚠️ **Atenção:** Todo o conteúdo é para **uso educacional e em ambientes autorizados**. O uso indevido pode ser considerado crime digital.
 
 📂 Estrutura
 
@@ -15,7 +10,7 @@ O usuário é totalmente responsável por qualquer uso indevido.
 
 ``payload/basic_shell.py → Stage básico de execução remota via PowerShell.``
 
-``README.md → Documentação do projeto.``
+``stagers/basic.ps1 → Comandos PowerShell.``
 
 # ⚙️ Requisitos
 
@@ -25,7 +20,7 @@ O usuário é totalmente responsável por qualquer uso indevido.
 
 # Clone o repositório:
 ```bash
-git clone https://github.com/DrkCde15/SecInfo/Cyber/Tools.git
+git clone https://github.com/DrkCde15/SecInfo/.git
 cd SecInfo/Cyber/Tools/Backdoor
 
 ▶️ Como usar

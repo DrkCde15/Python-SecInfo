@@ -1,6 +1,6 @@
 # Hacking ToolKit in Python
 
-This repository contains a collection of **Python** scripts aimed at security testing, reconnaissance and exploitation automation aimed at teaching Information Security.
+Este repositório contém uma coleção de scripts **Python** voltados para testes de segurança, reconhecimento e automação de exploração, visando o ensino de Segurança da Informação.
 
 ---
 
@@ -33,5 +33,5 @@ This repository contains a collection of **Python** scripts aimed at security te
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/DrkCde15/SecInfo/Cyber/Tools.git
+git clone https://github.com/DrkCde15/SecInfo/.git
 cd SecInfo/Cyber/Tools

@@ -27,5 +27,5 @@ O objetivo é **educacional**, servindo como apoio ao estudo de **ciberseguranç
 
 Clone o repositório:
 ```bash
-git clone https://github.com/DrkCde15/SecInfo/Cyber/Tools/GameOver.git
+git clone https://github.com/DrkCde15/SecInfo/.git
 cd SecInfo/Cyber/Tools/GameOver
