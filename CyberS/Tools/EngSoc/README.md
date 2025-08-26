@@ -1,4 +1,4 @@
-# 🎯 EngSoc – Engenharia Social em Segurança da Informação
+# EngSoc – Engenharia Social em Segurança da Informação
 
 Este repositório contém exemplos **didáticos** de scripts relacionados a **engenharia social** e técnicas ofensivas utilizadas em cibersegurança.  
 O objetivo é **educacional**, auxiliando no estudo de como tais ataques funcionam para que seja possível **prevenir, detectar e mitigar riscos**.
@@ -30,5 +30,6 @@ O objetivo é **educacional**, auxiliando no estudo de como tais ataques funcion
 
 Clone o repositório:
 ```bash
-git clone https://github.com/DrkCde15/SecInfo/Cyber/Tools/EngSoc.git
-cd EngSoc
+```bash
+git clone https://github.com/DrkCde15/SecInfo/Cyber/Tools.git
+cd SecInfo/Cyber/Tools/EngSoc

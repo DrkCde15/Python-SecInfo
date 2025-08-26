@@ -25,8 +25,8 @@ O usuário é totalmente responsável por qualquer uso indevido.
 
 # Clone o repositório:
 ```bash
-git clone https://github.com//ps_bkdr.git
-cd ps_bkdr
+git clone https://github.com/DrkCde15/SecInfo/Cyber/Tools.git
+cd SecInfo/Cyber/Tools/Backdoor
 
 ▶️ Como usar
 

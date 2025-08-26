@@ -28,5 +28,5 @@ Este repositório contém uma coleção de scripts em **Python** voltados para t
 
 1. Clone este repositório:
 ```bash
-git clone https://github.com/DrkCde15/SecInfo/Cyber/Tools/Web.git
-cd CyberS/Tools/Web
+git clone https://github.com/DrkCde15/SecInfo/Cyber/Tools.git
+cd SecInfo/Cyber/Tools/Web

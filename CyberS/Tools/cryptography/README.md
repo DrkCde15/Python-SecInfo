@@ -8,5 +8,5 @@ Script Python para criptografar e descriptografar uma mensagem utilizando as bib
 
 Clone o repositório:
 ```bash
-git clone https://https://github.com/DrkCde15/SecInfo/Cyber/Tools/Cryptography.git
-cd Cryptography
+git clone https://github.com/DrkCde15/SecInfo/Cyber/Tools.git
+cd SecInfo/Cyber/Tools/Cryptography

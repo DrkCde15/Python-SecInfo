@@ -7,26 +7,26 @@ This repository contains a collection of **Python** scripts aimed at security te
 ## 📂 Structure
 
 - **Books**  
-  Collection of Books for the study in Cyber Security
+  Coleção de livros para estudo em Segurança Cibernética
   
 - **Backdoor**  
-  This repository contains a teaching payload server for remote execution via PowerShell, using Python and HTTP.
-  Its purpose is educational, allowing for the study of payloads, remote communication, and command manipulation in a controlled manner in security labs.
+  Este repositório contém um servidor de payload de ensino para execução remota via PowerShell, usando Python e HTTP.
+  Sua finalidade é educacional, permitindo o estudo de payloads, comunicação remota e manipulação de comandos de forma controlada em laboratórios de segurança.
 
 - **Cryptography**  
-  Python script to **encrypt and decrypt** a message using the random and string libraries
+  Script Python para **criptografar e descriptografar** uma mensagem usando as bibliotecas random e string
 
 - **EngSoc**  
-  This repository contains examples of scripts related to **social engineering** and offensive techniques used in cybersecurity.
+  Este repositório contém exemplos de scripts relacionados à **engenharia social** e técnicas ofensivas usadas em segurança cibernética.
 
 - **GameOver**  
-  This repository contains **Python** scripts developed to simulate risk scenarios in computer system Windows.
+  Este repositório contém scripts **Python** desenvolvidos para simular cenários de risco em sistemas de computador Windows.
 
 - **Web**  
-  This repository contains a collection of **Python** scripts aimed at security testing, reconnaissance automation, and exploitation in controlled environments.
+  Este repositório contém uma coleção de scripts **Python** voltados para testes de segurança, automação de reconhecimento e exploração em ambientes controlados.
 
 - **Wireless**  
-  This repository contains a collection of **Python** scripts aimed at security testing, reconnaissance automation and exploitation in Networks/Domains.
+  Este repositório contém uma coleção de scripts **Python** voltados para testes de segurança, automação de reconhecimento e exploração em Redes/Domínios.
 ---
 
 ## 🚀 Como Usar

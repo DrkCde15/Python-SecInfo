@@ -33,5 +33,5 @@ Este repositório contém uma coleção de scripts em **Python** voltados para t
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/DrkCde15/SecInfo/Cyber/Tools/Wireless.git
+git clone https://github.com/DrkCde15/SecInfo/Cyber/Tools.git
 cd SecInfo/Cyber/Tools/Wireless
