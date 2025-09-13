@@ -23,7 +23,7 @@ Este repositório contém uma coleção de scripts em **Python** voltados para t
   Wrapper para o **Nmap** via Python.  
   Executa varreduras avançadas aproveitando as funcionalidades da ferramenta nmap(com scanns stealth, agressivo e rápido).
 
-  - **sniff.py**  
+- **sniff.py**  
   Script para captura de pacotes de rede e salvamento em um banco de dados SQLite.
 
 - **wifi_pass.py**  
