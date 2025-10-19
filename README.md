@@ -28,7 +28,7 @@ Este repositório contém uma coleção de scripts **Python** voltados para test
 - **Wireless**  
   Este repositório contém uma coleção de scripts **Python** voltados para testes de segurança, automação de reconhecimento e exploração em Redes/Domínios.
 
-- **Boas Prátricas**
+- **Boas Práticas**
   Este repositório contém tabelas, informações e dicas de como manter boas práticas de segurança. Também será mencionado cursos para aprimorar o conhecimento.
 ---
 
