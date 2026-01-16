@@ -1,6 +1,6 @@
 # Cryptography
 ---
-Script Python para criptografar e descriptografar uma mensagem utilizando as bibliotecas random e string
+Scripts Python para criptografar e descriptografar uma senha e armazenalas em um banco de dados.
 
 ## ⚙️ Requisitos
 
